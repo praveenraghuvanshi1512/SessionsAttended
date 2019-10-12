@@ -21,8 +21,22 @@
 - [Learning path for Containers & Kubernetes on MS Learn]( https://aka.ms/ws/containerization)
 - [Azure Learning](https://aka.ms/ws/learnaz)
 - [Microsoft Newsletter, Events](https://aka.ms/ws/Microsoft.source)
+- [Flask simple app docker](http://containertutorials.com/docker-compose/flask-simple-app.html)
 
 #### Workshop Management
 - List directory for local access
 - Step by step instruction 
 - Add links to resources in meetup before and afterwards
+
+## Local Setup
+
+#### Commands
+- cd src
+- python app.py
+- Launch browser with http://localhost:5003
+- "Hello World from OABLN1699" should be printed in browser
+- Ctrl + C to exit
+- docker build -t flask-hello-world:v1 .
+- docker run -d -p 5555:5003 flask-hello-world:v1
+- Launch browser with http://localhost:5555
+- "Hello World from 6d6a33c3f390" should be printed in browser where 6d6a33c3f390 is the container Id
