@@ -22,6 +22,7 @@
 - [Azure Learning](https://aka.ms/ws/learnaz)
 - [Microsoft Newsletter, Events](https://aka.ms/ws/Microsoft.source)
 - [Flask simple app docker](http://containertutorials.com/docker-compose/flask-simple-app.html)
+- [Dockerize a Flask App](https://dev.to/riverfount/dockerize-a-flask-app-17ag)
 
 #### Workshop Management
 - List directory for local access
@@ -30,7 +31,7 @@
 
 ## Local Setup
 
-#### Commands
+### Create Docker image, container, build and run
 - cd src
 - python app.py
 - Launch browser with http://localhost:5003
@@ -40,3 +41,5 @@
 - docker run -d -p 5555:5003 flask-hello-world:v1
 - Launch browser with http://localhost:5555
 - "Hello World from 6d6a33c3f390" should be printed in browser where 6d6a33c3f390 is the container Id
+
+### Kubernetes
